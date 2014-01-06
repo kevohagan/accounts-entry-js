@@ -1,4 +1,10 @@
 
+<<<<<<< HEAD
+=======
+//Meteor.startup(function() {
+//
+//});
+>>>>>>> 0b0eba82d5f5dfb50ab1f84d70c32b7b38793869
 
 AccountsEntry = {
   settings: {},
@@ -13,7 +19,11 @@ Accounts.urls.resetPassword = function(token) {
 
 Meteor.methods({
   entryValidateSignupCode: function(signupCode) {
+<<<<<<< HEAD
     console.log('entryValidateSignupCode.signupCode: ' + signupCode);
+=======
+    return true;
+>>>>>>> 0b0eba82d5f5dfb50ab1f84d70c32b7b38793869
     return signupCode === AccountsEntry.settings.signupCode;
   },
   accountsCreateUser: function(username, email, password) {

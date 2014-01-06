@@ -21,7 +21,6 @@ Package.on_use(function(api) {
   api.add_files([
     'client/entry.less',
 
-    'client/models/entrySignInPage.html',
     'client/models/entrySignUpPage.html',
     'client/models/forgotPassword.html',
     'client/models/resetPassword.html',
@@ -31,7 +30,6 @@ Package.on_use(function(api) {
 
     'client/entry.js',
     'client/helpers.js',
-    'client/controllers/entrySignInPage.js',
     'client/controllers/entrySignUpPage.js',
     'client/controllers/forgotPassword.js',
     'client/controllers/resetPassword.js',
@@ -46,6 +44,7 @@ Package.on_use(function(api) {
     'client/views/entrySocial.less',
     'client/views/entryError.less',
     'client/views/accountButtons.less'
+
   ], 'client');
 
   // SERVER

@@ -1,13 +1,21 @@
 
 Router.map(function() {
+<<<<<<< HEAD
   this.route("entrySignInPage", {
+=======
+  this.route("entrySignIn", {
+>>>>>>> 0b0eba82d5f5dfb50ab1f84d70c32b7b38793869
     path: "/sign-in",
     before: function() {
       Session.set('entryError', void 0);
       return Session.set('buttonText', 'in');
     }
   });
+<<<<<<< HEAD
   this.route("entrySignUpPage", {
+=======
+  this.route("entrySignUp", {
+>>>>>>> 0b0eba82d5f5dfb50ab1f84d70c32b7b38793869
     path: "/sign-up",
     before: function() {
       Session.set('entryError', void 0);
