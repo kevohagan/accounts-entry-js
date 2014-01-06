@@ -1,0 +1,15 @@
+{
+  "name": "accounts-entry-js",
+  "description": "A javascript meteorite package that relies on Iron Router and gives you sign page login styles.",
+  "homepage": "https://github.com/BeDifferential/accounts-entry",
+  "author": "Differential (http://differential.io)",
+  "contributor": "awatson1978",
+  "version": "0.5.0",
+  "git": "https://github.com/awatson1978/accounts-entry.git",
+  "packages": {
+    "iron-router": "0.6.1",
+    "bootstrap-3": {},
+    "scss": {},
+    "event-hooks": {}
+  }
+}
