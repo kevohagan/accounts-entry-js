@@ -21,10 +21,10 @@ Template.entrySignInPage.helpers({
 });
 
 Template.entrySignInPage.events({
-  'submit #signIn': function(event) {
-    event.preventDefault();
-    Session.set('email', $('input[name="email"]').val());
-    Session.set('password', $('input[name="password"]').val());
+  'click #entrySignInButton': function() {
+    Session.set('email', $('#emailInput').val());
+    Session.set('password', $('#passwordInput').val());
+
     return Meteor.loginWithPassword(Session.get('email'), Session.get('password'), function(error) {
       if (error) {
         return Session.set('entryError', error.reason);
@@ -32,18 +32,6 @@ Template.entrySignInPage.events({
         return Router.go(AccountsEntry.settings.dashboardRoute);
       }
     });
+
   }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-

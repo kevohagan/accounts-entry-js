@@ -22,6 +22,7 @@ Package.on_use(function(api) {
     'client/entry.less',
 
     'client/models/entrySignUpPage.html',
+    'client/models/entrySignInPage.html',
     'client/models/forgotPassword.html',
     'client/models/resetPassword.html',
     'client/models/entrySocial.html',
@@ -31,6 +32,7 @@ Package.on_use(function(api) {
     'client/entry.js',
     'client/helpers.js',
     'client/controllers/entrySignUpPage.js',
+    'client/controllers/entrySignInPage.js',
     'client/controllers/forgotPassword.js',
     'client/controllers/resetPassword.js',
     'client/controllers/entrySocial.js',

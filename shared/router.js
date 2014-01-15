@@ -1,27 +1,23 @@
 
+
 Router.map(function() {
-<<<<<<< HEAD
-  this.route("entrySignInPage", {
-=======
-  this.route("entrySignIn", {
->>>>>>> 0b0eba82d5f5dfb50ab1f84d70c32b7b38793869
-    path: "/sign-in",
-    before: function() {
-      Session.set('entryError', void 0);
-      return Session.set('buttonText', 'in');
-    }
-  });
-<<<<<<< HEAD
-  this.route("entrySignUpPage", {
-=======
-  this.route("entrySignUp", {
->>>>>>> 0b0eba82d5f5dfb50ab1f84d70c32b7b38793869
+  this.route("entrySignUpRoute", {
     path: "/sign-up",
+    template:"entrySignUpPage",
     before: function() {
       Session.set('entryError', void 0);
-      return Session.set('buttonText', 'up');
+      //return Session.set('buttonText', 'up');
     }
   });
+  this.route("entrySignInRoute", {
+    path: "/sign-in",
+    template:"entrySignInPage",
+    before: function() {
+      Session.set('entryError', void 0);
+      //return Session.set('buttonText', 'up');
+    }
+  });
+
   this.route("entryForgotPassword", {
     path: "/forgot-password",
     before: function() {
